@@ -14,8 +14,8 @@ end
 
 def get_japanese_emoticon(file_path, english_emoticon)
   list = load_library(file_path)
-    # binding.pry
    if list[:get_emoticon][english_emoticon] 
+    binding.pry
       return list[:get_emoticon][english_emoticon]
     else
       return "Sorry, that emoticon was not found"
